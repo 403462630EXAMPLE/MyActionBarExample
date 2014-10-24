@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_settings"
+        android:title="search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="com.example.rjhy.myactionbar.MyActionView"
+        />
+    <item android:id="@+id/action_settings"
+        android:title="search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionLayout="@layout/my_action_view"
+        />
+
+    <item android:id="@+id/custom0"
+        android:title="custom"
+        android:icon="@android:drawable/ic_media_next"
+        app:showAsAction="always"
+        app:actionProviderClass="com.example.rjhy.myactionbar.MyProvider"/>
+    <item android:id="@+id/share"
+        android:title="share"
+        android:icon="@android:drawable/ic_menu_save"
+        app:showAsAction="never"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+    <item android:id="@+id/custom"
+        android:title="custom"
+        android:icon="@android:drawable/ic_media_next"
+        app:showAsAction="always"
+        app:actionProviderClass="com.example.rjhy.myactionbar.MyProvider2"/>
+    <item android:id="@+id/custom2"
+        android:title="custom"
+        android:icon="@android:drawable/ic_media_next"
+        app:showAsAction="always"
+        app:actionProviderClass="com.example.rjhy.myactionbar.MyProvider3"/>
+
+
+</menu>

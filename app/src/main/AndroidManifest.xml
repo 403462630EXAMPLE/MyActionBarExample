@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rjhy.myactionbar" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="com.example.rjhy.myactionbar.MyActivity"
+            android:label="@string/app_name"
+            android:logo="@android:drawable/ic_menu_search" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.rjhy.myactionbar.MyActivity2"
+            android:label="@string/title_activity_my_activity2"
+            android:parentActivityName="com.example.rjhy.myactionbar.MyActivity" >
+
+            <!-- 这里是为了兼容Android4.0及以前的版本 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MyActivity2" />
+        </activity>
+        <activity
+            android:name="com.example.rjhy.myactionbar.ProviderActivity1"
+            android:label="@string/title_activity_provider_activity1"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:icon="@android:drawable/sym_action_call">
+            <intent-filter>
+                <action android:name="com.example.provider" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.rjhy.myactionbar.ProviderActivity2"
+            android:label="@string/title_activity_provider_activity2"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:icon="@android:drawable/sym_action_chat">
+            <intent-filter>
+                <action android:name="com.example.provider" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.rjhy.myactionbar.ProviderActivity3"
+            android:label="@string/title_activity_provider_activity3"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:icon="@android:drawable/sym_action_email">
+            <intent-filter>
+                <action android:name="com.example.provider" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
